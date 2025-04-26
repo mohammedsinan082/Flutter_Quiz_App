@@ -14,4 +14,6 @@ class Pictures{
   static const google="assets/images/google.png";
   static const splashbackground="assets/images/splashbackground.jpeg";
   static const splashloader="assets/images/splashloader.json";
+  static const abc="assets/images/abc.jpeg";
+  static const zzzz="assets/images/zzzzzzzzz.jpeg";
 }

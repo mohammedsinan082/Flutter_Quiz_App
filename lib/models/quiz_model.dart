@@ -5,14 +5,16 @@ class QuizModel{
   final String topicId;
   final String topicName;
   final String userId;
+  String?quizId;
 
 
 //<editor-fold desc="Data Methods">
-  const QuizModel({
+   QuizModel({
     required this.questions,
     required this.topicId,
     required this.topicName,
-    required this.userId
+    required this.userId,
+    this.quizId,
   });
 
   QuizModel copyWith({
@@ -35,6 +37,7 @@ class QuizModel{
       'topicId': topicId,
       'topicName':topicName,
       'userId':userId,
+      "quizId":quizId
     };
   }
 
@@ -44,6 +47,7 @@ class QuizModel{
         topicId: map['topicId']??"",
         topicName: map['topicName']??"",
         userId: map['userId']??"",
+      quizId: map["quizId"]??""
     );
   }
 

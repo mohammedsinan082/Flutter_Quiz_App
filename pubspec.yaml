@@ -46,6 +46,12 @@ dependencies:
   flutter_riverpod: ^2.4.8
   shared_preferences:
   timer_count_down: ^2.2.0
+  google_fonts: ^5.1.0
+  hero_animation: ^1.1.4
+  get: ^4.6.6
+  flutter_animate: ^4.5.0
+  animations: ^2.0.8
+  page_animation_transition: ^1.0.0
 
 
 dev_dependencies:

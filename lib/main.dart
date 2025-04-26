@@ -1,8 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz_app/selection_page.dart';
+import 'package:flutter_quiz_app/features/auth/screens/splash_animation_page.dart';
+import 'package:flutter_quiz_app/features/selectionpage/screens/selection_page.dart';
 import 'package:flutter_quiz_app/features/auth/screens/signup_page.dart';
-import 'package:flutter_quiz_app/survey_page.dart';
+import 'package:flutter_quiz_app/features/survey_page/screens/survey_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'features/auth/screens/splashscreen_page.dart';
@@ -14,6 +15,7 @@ var h;
 var currentuseremail;
 var currentuserid;
 var currentusername;
+
 bool loggedIn=false;
 
 Future<void> main() async {
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
     w=MediaQuery.of(context).size.width;
     h=MediaQuery.of(context).size.height;
     return MaterialApp(
-     home: SplashScreen(),
+     home: First(),
       debugShowCheckedModeBanner: false,
     );
   }
